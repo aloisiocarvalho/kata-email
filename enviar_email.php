@@ -1,5 +1,7 @@
 <?php
-
-	mail('aloisio@elianapedrosa.com.br', 'Assunto: Teste', 'Apenas um teste.');	
+	$destinatario= 'aloisio@elianapedrosa.com.br';
+	$assunto= $_POST['Assunto'];
+	$corpo= $_POST['Mensagem'];
+	mail($destinatario, $assunto, $corpo);	
 
 ?>
